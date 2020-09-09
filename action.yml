@@ -1,0 +1,16 @@
+name: 'Process Project Test Results'
+description: 'Github Action to process project test results.'
+
+inputs:
+  info:
+    required: true
+  ref:
+    required: true
+  outcome:
+    required: true
+  token:
+    required: true
+
+runs:
+  using: 'node12'
+  main: 'index.js'
